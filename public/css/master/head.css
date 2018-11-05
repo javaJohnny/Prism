@@ -1,0 +1,41 @@
+
+.head{
+    background: #ADAE60;
+    border-bottom: 1px solid black;
+}
+.header {
+    display: block;
+}
+.header .logo {
+    display: inline-block;
+}
+.logo img {
+    width:40%;
+}
+.nav {
+    text-align: center;
+    display: block;
+    border-top: 2px ridge black;
+    padding: 0.1em 0em;
+    box-shadow: 0 0 3px black;
+    background: #E8E88C;
+    z-index: 2;
+}
+.head .navigation {
+    display: inline-block;
+}
+.navigation a{
+    font-size: 1.5em;
+    margin: 1em;
+    letter-spacing: 1px;
+    color: #FFFBE3;
+    font-weight: bold;
+    font-family: monospace;
+    text-shadow: -2px 1px 3px black;
+}
+.navigation a i {
+    color: #2EC3F6;
+}
+.navigation a:hover{
+    font-style: italic;
+}

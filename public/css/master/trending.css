@@ -1,0 +1,39 @@
+.trending {
+    display: block;
+    padding: 1em;
+    background: #ADAE60;
+    box-shadow: 0px 0px 5px black;
+    min-height: 500px;
+    font-family: monospace;
+}
+.trending h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+.trending ul {
+}
+.trending img {
+    width: 20%;
+    display: inline-block;
+}
+.list_card {
+    position: relative;
+}
+.trending h3 {
+    position: absolute;
+    top: 19px;
+    left:60px;
+    display: inline;
+}
+.trending li {
+    font-size: 1.2em;
+    margin: 1.5em 0;
+    display: block;
+    border-bottom: 1px solid black;
+
+}
+.trending li:hover {
+    background: #E8E88C;
+    border-radius: 5px;
+    border: none;
+}

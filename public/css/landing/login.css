@@ -1,0 +1,178 @@
+*    {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+@font-face {
+    font-family: "Ruslan";
+    src:url('/css/font_family/RuslanDisplay/RuslanDisplay.ttf'),
+        url('/css/font_family/RuslanDisplay/RuslanDisplay.eot'),
+        url('/css/font_family/RuslanDisplay/RuslanDisplay.woff');
+}
+@font-face {
+    font-family: "Sacramento";
+    src: url('/css/font_family/Sacramento/Sacramento-Regular.woff'),
+    url('/css/font_family/Sacramento/Sacramento-Regular.ttf'),
+    url('/css/font_family/Sacramento/Sacramento-Regular.eot');
+}
+}
+@font-face {
+    font-family: "Englebert";
+    src: url('/css/font_family/Englebert/Englebert-Regular.eot'),
+        url('/css/font_family/Englebert/Englebert-Regular.ttf'),
+        url('/css/font_family/Englebert/Englebert-Regular.woff');
+}
+@font-face {
+    font-family: "Federant";
+    src:url('/css/font_family/Federant/Federant-Regular.eot'),
+        url('/css/font_family/Federant/Federant-Regular.ttf'),
+        url('/css/font_family/Federant/Federant-Regular.woff');
+}
+@font-face {
+    font-family: "Pattaya";
+    src: url('/css/font_family/Pattaya/Pattaya-Regular.ttf');
+}
+
+body{
+    background-image: url("/img/landing/smile.jpg");
+    background-size: cover;
+    height: 10vh;
+}
+.grid    {
+    display: grid;
+    grid-template-rows: 100% 1fr 1fr;
+}
+.head   {
+    background: #A5A551;
+    padding: 1em;
+    box-shadow: 0px 0px 5px black;
+    z-index: 1;
+}
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 700px;
+}
+.nav-title h1 {
+    text-transform: uppercase;
+    padding-left: 1em;
+    padding-top: 0.4em;
+    text-shadow: -6px 2px 3px black;
+    color: #FCFDF4;
+    font-weight: bolder;
+    font-family: Helvetica;
+    font-size: 3em;
+}
+.nav-form  {
+    padding: 1em;
+}
+.nav-form form {
+    display: block;
+}
+.form-control  {
+    display: inline-block;
+    margin-left: 20px;
+}
+.nav-form label {
+    color:white
+}
+.nav-form input {
+    font-family: Pattaya;
+    width: 100%;
+    border-radius: 1px;
+    border: 1px solid black;
+    box-shadow: 0 0 3px black;
+    font-weight: bold;
+    padding: 0 0.8em;
+}
+.nav-form button {
+    font-family: Englebert;
+    padding: 0.6em;
+    margin-bottom: 2px;
+    background: #E7E789;
+    border: 1px solid #E7E789;
+    font-weight: bold;
+    box-shadow: 0 0 3px black;
+    border-radius: 2px;
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+    transition: all 0.5s;
+}
+.main    {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #E7E78B;
+    box-shadow: 0 0 5px black;
+    z-index: 0;
+}
+.logo {
+    text-align: center;
+    padding-top: 5em;
+    z-index: 1;
+}
+.main-form  {
+    padding-top: 5%;
+}
+.main-form .main-text {
+    display: block;
+    font-size: 1.3em;
+}
+.main-text h2 {
+    font-size: 2em;
+}
+.main-text p {
+    font-size: 1.5em;
+    font-style: italic;
+}
+.main-form {
+    padding: 0em 3em;
+}
+.main-form form input {
+    font-family: Pattaya;
+    display: block;
+    margin-top: 1em;
+    width: 80%;
+    padding: 0.5em;
+    font-size: 1.4em;
+    border-radius: 5px;
+    box-shadow: 0 0 3px;
+    border: 1px solid black;
+}
+.main-form select {
+    display: block;
+    margin-top: 1em;
+    width: 80%;
+    padding: 0.5em;
+    font-size: 1.4em;
+    border-radius: 5px;
+    box-shadow: 0 0 3px;
+    border: 1px solid black;
+}
+.main-form button {
+    font-family: Englebert;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0.5em 2em;
+    border-radius: 10px;
+    background: #659E51;
+    box-shadow: 0 0 3px black;
+    border: 1px solid #eee;
+    color:#e4e4e4;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.foot {
+    position: relative;
+    display: block;
+    background: #FFFBDF;
+    box-shadow: 0 0 3px black;
+    z-index: -1;
+}
+.foot p {
+    font-style: italic;
+    font-size: 0.8em;
+    padding-top: 5%;
+    text-align: center;
+}

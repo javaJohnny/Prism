@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Ruslan";
+    src:url('/css/font_family/RuslanDisplay/RuslanDisplay.ttf'),
+        url('/css/font_family/RuslanDisplay/RuslanDisplay.eot'),
+        url('/css/font_family/RuslanDisplay/RuslanDisplay.woff');
+}
+@font-face {
+    font-family: "Sacramento";
+    src: url('/css/font_family/Sacramento/Sacramento-Regular.woff'),
+    url('/css/font_family/Sacramento/Sacramento-Regular.ttf'),
+    url('/css/font_family/Sacramento/Sacramento-Regular.eot');
+}
+}
+@font-face {
+    font-family: "Englebert";
+    src: url('/css/font_family/Englebert/Englebert-Regular.eot'),
+        url('/css/font_family/Englebert/Englebert-Regular.ttf'),
+        url('/css/font_family/Englebert/Englebert-Regular.woff');
+}
+@font-face {
+    font-family: "Federant";
+    src:url('/css/font_family/Federant/Federant-Regular.eot'),
+        url('/css/font_family/Federant/Federant-Regular.ttf'),
+        url('/css/font_family/Federant/Federant-Regular.woff');
+}
+@font-face {
+    font-family: "Pattaya";
+    src: url('/css/font_family/Pattaya/Pattaya-Regular.ttf');
+}

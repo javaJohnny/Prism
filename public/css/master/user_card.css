@@ -1,0 +1,40 @@
+.user_card {
+    padding:1em;
+    min-height: 300px;
+    border-radius: 2px;
+    background: #ADAE60;
+    box-shadow: 0px 0px 5px black;
+    font-family: monospace;
+}
+.user {
+    display: block;
+    border-bottom: 1px solid black;
+}
+.user img {
+    border: 2px solid black;
+    box-shadow: 0 0 3px black;
+    width:100px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.user h2{
+    display: inline-block;
+}
+.desc{
+    padding:1em;
+}
+.desc .stats{
+    display: block;
+}
+.desc p{
+    display: block;
+}
+.user_counter {
+    padding: 0 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.user_counter .counter_card {
+    text-align: center;
+    padding:1em;
+}

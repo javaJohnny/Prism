@@ -1,0 +1,22 @@
+body {
+    background:#F7F7EB;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows:1fr 1fr 100% 100%;
+    width: 950px;
+    margin: 0 auto;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.side {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 70px 3fr;
+    padding-top:1em;
+    padding-left: 0.5em;
+}

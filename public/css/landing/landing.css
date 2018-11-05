@@ -1,0 +1,140 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height:100%;
+    overflow-x: hidden;
+    background: #eee;
+}
+h1{
+    display: block;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    left: 46.5%;
+    top:15%;
+    font-size: 4em;
+    font-family: monospace;
+    color:gold;
+    text-shadow: 0 0 5px black;
+}
+.landingPage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.landingPage .split {
+    position: absolute;
+    width: 50%;
+    height:100%;
+    overflow: hidden;
+}
+.split.left {
+    left:0;
+    background-image: url('/img/Landing/leftside.jpg');
+    background-size: cover;
+}
+.split .left:before {
+    position: absolute;
+    content: " ";
+    width:100%;
+    height: 100%;
+    background: rgba(136, 226, 247, 0.7);
+}
+.split.right {
+    right:0;
+    background-image: url('/img/Landing/rightside.jpg');
+    background-size: cover;
+}
+.split .right:before {
+    position: absolute;
+    content: " ";
+    width:100%;
+    height: 100%;
+    background: rgba(227, 140, 219, 0.8);
+}
+.split.left, .split.left:before, .split.right, .split.right:before{
+    transition: 1000ms all ease-in-out;
+}
+.hover-left .left{
+    width: 75%;
+}
+.hover-left .right{
+    width: 25%;
+}
+.hover-left .right:before{
+    z-index: 2;
+}
+.hover-right .right{
+    width: 75%;
+}
+.hover-right .left{
+    width: 25%;
+}
+.hover-right .left:before{
+    z-index: 2;
+}
+.landing_card{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+}
+.landing_card h2{
+    text-align: center;
+    color: gold;
+    text-shadow: 0px 0px 5px black;
+    font-family: monospace;
+    font-size: 2em;
+}
+.landing_card form{
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Playfair Display', serif;
+}
+.landing_card .input{
+    margin-top: 1em;
+    box-shadow: 0 0 5px black;
+    padding:0.3em;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    width:100%;
+    display: block;
+    color:white;
+}
+.landing_card input[placeholder]{
+    color:white;
+    font-size: 1.3em;
+}
+.landing_card button {
+    padding: 0.5em;
+    font-size: 1em;
+    margin-top: 1em;
+    border: 1px solid gold;
+    border-radius: 10px;
+    font-weight: bold;
+    color:gold;
+    background: none;
+}
+.landing_card button:hover {
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.5s;
+    padding: 0.6em;
+}
+
+
+
+
+@media(max-width: 800px){
+    h1 {
+        font-size: 2rem;
+    }
+
+    button{
+        width:12rem;
+    }
+}

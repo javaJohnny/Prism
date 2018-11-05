@@ -1,0 +1,25 @@
+Vue.Component('likeBtn', {
+    props: ['likeCount', 'hasLiked'],
+    template:
+    `
+    <form>
+        <button type="submit" @click="doLike">
+            Like
+        </button>
+    </form>
+    `,
+
+    data() {
+        return {
+            likeCount: 0,
+
+        }
+    },
+    methods: {
+        doLike() {
+
+        }
+    }
+});
+
+<like-Btn :like-Count="{{ count($post->likes) }}"></like-Btn>

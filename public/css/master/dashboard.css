@@ -1,0 +1,251 @@
+.dashboard {
+    grid-row: 1/5;
+    display: block;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 0.5em;
+    padding-top: 1em;
+}
+.dash_head {
+    display: block;
+    background: #ADAE60;
+    padding:1em;
+    color:#E8E88C;
+    text-shadow: 0 0 3px black;
+    box-shadow: 0px 0px 5px black;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: monospace;
+    text-shadow: -2px 1px 3px black;
+}
+.dashboard .timeline {
+    padding: 3em;
+}
+.post_form {
+    display: block;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #eee;
+}
+.post_form form {
+    text-align: center;
+}
+.post_form form input {
+    width: 70%;
+    border: 1px solid #eee;
+    padding: 1em;
+    border-radius: 10px;
+}
+.post_form .inline {
+    display: inline;
+}
+.postbtn {
+    display: inline;
+    border: 1px solid #eee;
+    background: none;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border-radius: 15px;
+}
+.postbtn:hover {
+    cursor: pointer;
+    background: #E8E88C;
+    font-weight: bold;
+    box-shadow: 0px 0px 1px black;
+}
+
+
+.post_card {
+    margin: 10px 0;
+    background: #E8E88C;
+    box-shadow: 0px 0px 2px black;
+    font-family: Helvetica,sans-serif;
+}
+ul{
+    margin: 0 auto;
+    width:100%;
+}
+li .post_card {
+    display: block;
+    border-radius: 2px;
+}
+.post_card .post_head {
+    padding: 1em;
+    display: block;
+}
+.post_head img {
+    border: 1px solid black;
+    box-shadow: -1px 1px 5px black;
+    width:50px;
+    border-radius: 50%;
+}
+.post_head .post_head_user {
+    display:inline-block;
+}
+.post_body {
+    display: block;
+}
+.post_body .text {
+    padding: 1em;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+.post_body img {
+    width: 100%;
+    box-shadow: 0px 0px 3px black;
+}
+.post_interact {
+    display: block;
+    padding: 0.5em;
+    text-align: center;
+}
+.post_interact .interact_card {
+    display:inline;
+    width:100%;
+    border-radius: 3px;
+}
+.interact_card a {
+    color:inherit;
+    margin: 0px 1em;
+    font-size: 1.5em;
+}
+.interact_card:hover {
+    background: rgba(170, 170, 170, 0.11);
+}
+.commentFeed {
+    box-shadow: 0px 0px 2px black;
+    background: #E8E88C;
+    border-radius: 2px;
+    display: block;
+    padding: 1em;
+}
+
+.commentFeed ul li{
+    display: block;
+    margin: 2em 0;
+}
+.comment_card_avatar{
+    display: inline-block;
+    position: absolute;
+
+}
+.comment_gif {
+    width:100%;
+}
+.comment_card_avatar img{
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px black;
+    width:50px;
+}
+.comment_card img {
+    display: block;
+    border-radius: 2px;
+    margin: auto;
+}
+.comment_body {
+    background: #fff;
+    margin-left: 55px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px black;
+    padding: 1em;
+    display: inline-block;
+}
+.comment_body a {
+    color:black;
+    font-weight: bold;
+}
+.form_btn {
+    background: #ADAE60;
+    padding:0.5em;
+    font-size: 1.3em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px black;
+}
+.form_btn:hover {
+    background: #eee;
+    font-style: italic;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+.comment_interact {
+    margin-left: 70px;
+}
+.comment_interact a {
+    margin: 0.3em;
+}
+.comment_interact a:hover {
+    text-decoration: underline;
+}
+.editpost .originalpost{
+    display: block;
+    margin: 2em 0;
+}
+.editpost .originalpost p {
+    font-size: 2.3em;
+}
+.comment_avatar {
+    border-radius: 50% !important;
+}
+.editpost {
+    display: block;
+    margin: 0 3em;
+    padding: 1em 2em;
+    background: #E8E88C;
+    box-shadow: 0px 0px 3px black;
+}
+.editpost h1{
+    border-bottom: 1px solid black;
+    display: block;
+
+}
+.editpost form {
+    text-align: center;
+    width: 100%;
+    display: inline;
+}
+.editpost form input {
+    max-height: 60px;
+    overflow: hidden;
+    padding: 0 0.3em;
+    font-size: 2em;
+    border-radius: 5px;
+    resize: none;
+    width: 100%;
+}
+.editpost form button {
+    margin-top:0.5em;
+    margin-right: 1em;
+}
+.delete:hover {
+    background: rgb(226, 38, 66);
+}
+
+.pageLink {
+    text-align: center;
+    margin-top: 20px;;
+}
+.pagination {
+    display: block;
+    margin-top: 5px;
+}
+
+.pagination .page-item{
+    display: inline;
+    padding: 0.5em;
+    border: 1px solid #EAD580;
+    margin: 0.1em;
+    border-radius: 3px;
+}
+
+.page-item:hover {
+    cursor: pointer;
+}
+.page-item:nth-child(1){
+    background: #EAD580;
+    border-radius: 20px 0 0 20px;
+}
+
+.page-item:nth-last-child(1){
+    background: #EAD580;
+    border-radius: 0 20px 20px 0;
+}

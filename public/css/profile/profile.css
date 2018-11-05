@@ -1,0 +1,222 @@
+a {
+    color:inherit;
+}
+.profile {
+    grid-column: 1/3;
+    grid-row: 1/5;
+    display: grid;
+    grid-template-rows: 100% 1fr 100% 10;
+    width: 950px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.profile_head {
+    position: relative;
+    display: block;
+    background: #ADAE60;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 3px black;
+    font-family: monospace;
+}
+.profile_main{
+    display: block;
+}
+.profile_banner {
+    position: relative;
+    height: 400px;
+    background-image: url('/img/Profile/banner.jpg');
+    background-size: contain;
+    border-radius: 10px 10px 0 0;
+}
+.profile_banner a {
+    position: absolute;
+    top:94%;
+    margin-right: 1em;
+    right:0;
+    background: none;
+    border: none;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.4);
+}
+.profile_banner a:hover {
+    cursor: pointer;
+    color: #000;
+    font-style: italic;
+    text-decoration: underline;
+}
+.profile_avatar{
+    box-shadow: -3px 2px 4px black;
+    border-radius: 50%;
+    margin-left: 30px;
+    position: absolute;
+    top:300px;
+}
+.profile_avatar img {
+    border-radius: 50%;
+    width:140px;
+}
+.profile_follow {
+    position: absolute;
+    top:418px;
+    right:0;
+}
+.profile_follow .followbtn{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 0.3em;
+    box-shadow: 0px 0px 3px black;
+}
+
+.followbtn:hover {
+    font-weight: bold;
+}
+.profile_head h2 {
+    font-size: 2em;
+    top:360px;
+    margin-left: 185px;
+    position: absolute;
+}
+.update_avatar {
+    position: absolute;
+    top:530px;
+    margin-left: 185px;
+}
+
+
+.profile_nav{
+    display: block;
+    margin-left:170px;
+}
+.profile_nav a:hover {
+    text-decoration: underline;
+}
+.profile_nav_card{
+    display: inline-block;
+    padding: 0.7em;
+    font-size: 1.3em;
+}
+.profile_main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100% 1fr ;
+    padding-top: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.profile_side {
+    grid-row: 1/2;
+}
+.profile_card {
+    background: #ADAE60;
+    box-shadow: 0 0 3px black;
+    padding: 1em;
+    text-align: justify;
+    border-radius: 2px;
+    display: block;
+}
+
+.profile_side h2 {
+    margin-bottom: 10px;
+}
+.profile_card .bio {
+    text-align: justify;
+    word-wrap: normal;
+    word-break:normal;
+    font-size: 0.9em;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid black;
+}
+.profile_card .bio textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border-radius: 2px;
+    text-align: justify;
+}
+.profile_card .stats {
+    padding-top: 1em;
+}
+.stats p {
+    margin-bottom: 10px;
+    display: block;
+}
+.stats strong {
+    font-style: italic;
+    font-size: 0.9em;
+}
+.stats_btn {
+    text-align: right;
+}
+.stats_btn button {
+    background: none;
+    border: 1px solid black;
+    padding: 0.5em;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.stats_btn button:hover {
+    font-style: italic;
+    box-shadow: 0px 0px 3px black;
+    background: #2EC5F8;
+    cursor: pointer;
+}
+.followers_card {
+    display: block;
+    margin-top: 1em;
+    background: #ADAE60;
+    box-shadow: 0 0 3px black;
+    padding: 1em;
+    border-radius: 2px;
+}
+.followers_container {
+    border-radius: 3px;
+    height: 175px;
+    background: #fff;
+    box-shadow: 0 0 3px black;
+    padding: 0.2em;
+    text-align: left;
+    overflow-y: scroll;
+}
+.followers {
+    border: 1px solid black;
+    margin: 0.2em;
+    width: 29%;
+    display: inline-block;
+}
+.followers:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2px #2EC5F8;
+}
+.followers img{
+    width: 100%;
+}
+.profile_dashboard {
+    padding-top: 1em;
+    grid-row:1/3;
+    display: block;
+    /* background: #eee; */
+    /* box-shadow: 0 0 3px black; */
+    margin-left: 1em;
+}
+.profile_dashboard .post_form button {
+    background: #fff;
+}
+@media screen and (max-width: 975px) {
+    .profile {
+        width:100%;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+    .profile_head h2 {
+        top:510px;
+    }
+
+    .profile_banner a {
+        right:0;
+    }
+}

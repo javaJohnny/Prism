@@ -1,0 +1,251 @@
+* {
+    padding:0;
+    margin:0;
+}
+@font-face {
+    font-family: "Ruslan";
+    src:url('/css/font_family/RuslanDisplay/RuslanDisplay.ttf'),
+        url('/css/font_family/RuslanDisplay/RuslanDisplay.eot'),
+        url('/css/font_family/RuslanDisplay/RuslanDisplay.woff');
+}
+@font-face {
+    font-family: "Sacramento";
+    src: url('/css/font_family/Sacramento/Sacramento-Regular.woff'),
+    url('/css/font_family/Sacramento/Sacramento-Regular.ttf'),
+    url('/css/font_family/Sacramento/Sacramento-Regular.eot');
+}
+}
+@font-face {
+    font-family: "Englebert";
+    src: url('/css/font_family/Englebert/Englebert-Regular.eot'),
+        url('/css/font_family/Englebert/Englebert-Regular.ttf'),
+        url('/css/font_family/Englebert/Englebert-Regular.woff');
+}
+@font-face {
+    font-family: "Federant";
+    src:url('/css/font_family/Federant/Federant-Regular.eot'),
+        url('/css/font_family/Federant/Federant-Regular.ttf'),
+        url('/css/font_family/Federant/Federant-Regular.woff');
+}
+@font-face {
+    font-family: "Pattaya";
+    src: url('/css/font_family/Pattaya/Pattaya-Regular.ttf');
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Ruslan;
+}
+body {
+    position: relative;
+    overflow-x: hidden;
+    background-image: url('/img/Landing/bananas.png');
+}
+#head {
+    display: block;
+    width: 100%;
+}
+#head .head-bar{
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 3px black;
+}
+.head-title {
+    display: inline-block;
+    font-size: 1.5em;
+    padding-left: 2em;
+}
+.head-title h1 {
+    font-family: Ruslan;
+}
+.head-interact {
+    text-align: center;
+    display: inline-block;
+    padding-top: 1.6em;
+    font-size: 0.7em;
+}
+.head-interact a {
+    font-size: 1.7em;
+    color: black;
+    text-decoration: none;
+}
+#head-msg {
+    position: relative;
+    margin: 3em 1em;
+    height:100vh;
+    max-height: 100%;
+    display: block;
+}
+#head-msg .msg {
+    text-align: center;
+}
+.msg span:hover{
+    font-weight: lighter;
+    transition: 1s all;
+    font-size: 1.5em;
+    font-style: normal;
+}
+.msg p {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top:15%;
+    font-size: 2.9em;
+    font-weight: 200;
+    font-style: italic;
+    z-index: 1;
+    border-radius: 25px;
+    font-family: Englebert;
+}
+
+#head-msg img {
+    width:85%;
+    border-radius: 50%;
+    box-shadow: 0 0 3px black;
+    opacity: 0.95;
+}
+.top-left {
+    position: absolute;
+    top:50px;
+    left:40px;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 160px;
+    left:160px;
+}
+.top-right {
+    position: absolute;
+    top:130px;
+    right:0px;
+}
+.bottom-right{
+    position: absolute;
+    bottom:0px;
+    right:70px;;
+}
+#main-msg {
+    display: block;
+    margin-top: 2em;
+}
+#main-msg .testimonial  {
+    padding: 20px 2em;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: lighter;
+    font-style: italic;
+}
+.testimonial p {
+    font-family: Englebert;
+}
+.testimonial span {
+    font-size:0.7em;
+    font-family: Sacramento;
+
+}
+#fact-msg {
+    padding-top: 8vh;
+    display: block;
+}
+.fact {
+    margin-right: 1em;
+}
+.fact-card {
+    margin: 1em;
+    padding: 1em;
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+}
+.fact-card p {
+    font-size: 1.8em;
+    padding-top: 25%;
+    text-align:center;
+    font-family: Pattaya;
+}
+.fact-card img {
+    width:100%;
+    float: right;
+    margin-top: 30px;
+    border-radius: 50px;
+    opacity: 0.9;
+}
+#form {
+    display: block;
+    position: relative;
+}
+#form h2 {
+    font-size: 4em;
+    text-align: center;
+    margin-top: 20vh;
+}
+.form-control {
+    padding: 10px 5em;
+}
+#form .form-card {
+    background-image: url('/img/Landing/light-veneer.png');
+    padding: 1em;
+    box-shadow: 0 0 5px black;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form-card form {
+    display: inline-block;
+    border-right: 1px solid black;
+}
+
+form button{
+    display: block;
+    margin: 1em;
+    padding: 0.5em;
+    background: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+form button:hover {
+    cursor: pointer;
+    background: #BFE8E3;
+}
+.form-card .input {
+    background: white;
+    opacity: 1;
+    width: 90%;
+    padding: 1em;
+    margin: 1em;
+    font-size: 0.8em;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 3px;
+}
+
+.form-card p {
+    font-size: 2em;
+    margin: 20%;
+}
+
+.form-card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.form-card a:hover {
+    color: purple;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#foot {
+    display: block;
+    margin-top: 2em;
+    background-image: url('/img/landing/light-veneer.png');
+}
+
+#foot p{
+    box-shadow: 0px 0px 3px black;
+    text-align: center;
+}
